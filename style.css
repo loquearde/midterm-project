@@ -28,6 +28,10 @@ body {
   margin: 30px;
 }
 
+.noshow {
+  display: none;
+}
+
 /* Navbar */
 
 header {
@@ -83,6 +87,8 @@ header {
 
 #empower-section {
   padding-top: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 .empower-section-container {
@@ -97,6 +103,9 @@ header {
 
 .empower-content {
   max-width: 530px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .empower-title {
@@ -118,7 +127,8 @@ h1 {
 
 .empower-text p {
   margin-bottom: 40px;
-  margin-right: 150px;
+  margin-right: 50px;
+  margin-left: 40px;
   color: #6b708d;
   line-height: 150%;
   font-size: 1.2rem;
