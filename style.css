@@ -28,6 +28,8 @@ body {
   margin: 30px;
 }
 
+/* Class to hide elements in mobile version */
+
 .noshow {
   display: none;
 }
@@ -110,7 +112,7 @@ header {
 
 .empower-title {
   color: #292e47;
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 130%;
   margin-right: 40px;
 }
@@ -182,7 +184,7 @@ a:hover {
 }
 
 .empower-image-main {
-  max-width: 650px;
+  max-width: 100%;
   padding: 20px;
 }
 
@@ -208,4 +210,25 @@ img {
   right: -25%;
   bottom: -22%;
   max-width: 375px;
+}
+
+/* Logos section */
+
+#logos-section {
+  margin-top: 0px;
+  padding: 0px 30px;
+}
+
+.container .logos {
+  margin-top: 40px;
+}
+
+.grid-logos {
+  width: 100%;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-auto-columns: 1fr;
+  grid-row-gap: 16px;
 }
