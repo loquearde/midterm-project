@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simplify</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="navbar-logo w-nav-brand"></a>
+      <nav class="home-project-services">
+        <a href="#">Home</a>
+        <a href="#">Projects</a>
+        <a href="#">Services</a>
+      </nav>
+      <div id="animated-right-menu"></div>
+      <a href="./contact-us.html">Contact Us</a>
+    </header>
+    <section class="section project">
+      <div class="container project">
+        <h1 class="project-page-title">Simplify</h1>
+        <div class="project-type-wrapper">
+          <div class="project-page-type">UI Design & App Development</div>
+          <div class="project-completion">
+            <div class="project-completed">Completed on</div>
+            <div class="project-date">2/2/22</div>
+          </div>
+        </div>
+        <div class="project-image-wrapper">
+          <img src="./project-assets/projects-section/1.jpg" alt="simplify" />
+        </div>
+      </div>
+      <div class="project-text">
+        <p>
+          Simplify is lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Sed feugiat faucibus sem, id vulputate justo ornare non. Nullam et
+          vehicula sem. Pellentesque bibendum massa non nisl posuere cursus.
+          Aliquam ac eros pretium neque consequat facilisis. Ut sit amet justo
+          varius ex ultrices fringilla. Sed vel turpis fringilla ante gravida
+          vestibulum. Etiam a sollicitudin leo. Nunc metus lectus, lacinia ut
+          arcu quis, pretium congue lacus.
+        </p>
+        <p>
+          Aliquam blandit varius metus, in mattis orci convallis sit amet. Fusce
+          et sem ac velit placerat ultrices in id dolor. Sed eget auctor metus.
+          Sed suscipit fringilla lectus, a maximus justo bibendum a. Donec et
+          pellentesque nisl, vitae tempus lorem. Sed efficitur cursus rhoncus.
+          Duis placerat nisi quis mi tincidunt, sit amet tincidunt urna
+          convallis. Nam et sagittis felis. Pellentesque placerat orci sodales
+          nisi convallis ultrices. Nunc posuere neque eu mi imperdiet
+          ullamcorper. Praesent tempor convallis rutrum. Vestibulum dignissim
+          pellentesque eros in placerat. Etiam at nisi quis quam sollicitudin
+          vehicula sit amet vel mi.
+        </p>
+      </div>
+    </section>
+
+    <section class="section project">
+      <div class="container projects-container">
+        <h2 class="projects-heading">Other Projects</h2>
+        <div class="projects-list-wrapper">
+          <div class="projects-list-row">
+            <div class="list-item">
+              <div class="project-card">
+                <div class="project-image">
+                  <img
+                    src="./project-assets/projects-section/2.jpg"
+                    alt="dashcoin"
+                  />
+                </div>
+                <div class="project-text">
+                  <div class="project-title">Dashcoin</div>
+                  <div class="project-title project-description">
+                    Web Development
+                  </div>
+                </div>
+                <a
+                  href="/projects/dashcoin"
+                  target="_blank"
+                  class="project-link"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+
+            <div class="list-item">
+              <div class="project-card">
+                <div class="project-image">
+                  <img
+                    src="./project-assets/projects-section/3.jpg"
+                    alt="vectorify"
+                  />
+                </div>
+                <div class="project-text">
+                  <div class="project-title">Vectorify</div>
+                  <div class="project-title project-description">
+                    User Experience Design
+                  </div>
+                </div>
+                <a
+                  href="/projects/vectorify"
+                  target="_blank"
+                  class="project-link"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+
+            <div class="list-item">
+              <div class="project-card">
+                <div class="project-image">
+                  <img
+                    class="project-card-image"
+                    src="./project-assets/projects-section/4.jpg"
+                    alt="orbit"
+                  />
+                </div>
+                <div class="project-text">
+                  <div class="project-title">Orbit</div>
+                  <div class="project-title project-description">UI Design</div>
+                </div>
+                <a href="/projects/orbit" target="_blank" class="project-link"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cta-section">
+      <div class="container container-cta">
+        <h1 class="cta-heading">Do you have any questions?</h1>
+        <div class="cta-subtitle">Let us help you!</div>
+        <div class="form-block w-form">
+          <form
+            id="email-form"
+            name="email-form"
+            data-name="Email Form"
+            method="get"
+            class="cta-form"
+            aria-label="Email Form"
+          >
+            <div class="cta-textfield-wrapper">
+              <div class="textfield-icon"></div>
+              <input
+                type="email"
+                class="text-field w-input"
+                maxlength="256"
+                name="email-2"
+                data-name="Email 2"
+                placeholder="Enter your email"
+                id="email-2"
+                required=""
+              />
+            </div>
+            <input
+              type="submit"
+              value="Subscribe"
+              data-wait="Please wait..."
+              class="button primary-button cta-button w-button"
+            />
+          </form>
+          <div
+            class="w-form-done"
+            tabindex="-1"
+            role="region"
+            aria-label="Email Form success"
+          >
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+          <div
+            class="w-form-fail"
+            tabindex="-1"
+            role="region"
+            aria-label="Email Form failure"
+          >
+            <div>Oops! Something went wrong while submitting the form.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container footer">
+        <div class="footer-content">
+          <div class="footer-content-logo"></div>
+          <div class="footer-content-address">
+            2972 Westheimer Rd. Santa Ana, Illinois 85486
+          </div>
+        </div>
+        <div class="footer-links">
+          <a href="#">Team</a>
+          <a href="#">Services</a>
+          <a href="#">About Us</a>
+          <a href="#">Press</a>
+          <a href="#">Projects</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
