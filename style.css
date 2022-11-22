@@ -341,3 +341,88 @@ h2 {
   font-weight: 500;
   text-decoration: none;
 }
+
+/* Testimonial section */
+
+#testimonial-section {
+  height: 450px;
+  margin-top: 60px;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #292e47;
+  background-image: url(./project-assets/testimonial-section/orbit.png);
+  color: #292e47;
+  max-width: 1320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-testimonial {
+  max-width: 1320px;
+  color: #292e47;
+}
+
+.testimonial-heading {
+  font-size: 2rem;
+  max-width: 400px;
+  margin-bottom: 0px;
+  line-height: 150%;
+  color: #ecf7ff;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.testimonial-text {
+  max-width: 560px;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  color: #ffc600;
+  font-size: 24px;
+  line-height: 160%;
+  font-weight: 500;
+  text-align: center;
+}
+
+.client {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.client-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url(./project-assets/testimonial-section/profile.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.client-info {
+  display: flex;
+  margin-left: 10px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.client-name {
+  color: #a2d6f9;
+  font-size: 17px;
+}
+
+.client-position {
+  color: #ecf7ff;
+  font-size: 13px;
+}
