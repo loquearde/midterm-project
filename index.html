@@ -9,16 +9,21 @@
     <script src="./index.js"></script>
   </head>
   <body id="body">
-    <div id="animated-navbar"></div>
     <header>
       <a href="#" class="navbar-logo w-nav-brand"></a>
-      <nav class="home-project-services">
-        <a href="#">Home</a>
-        <a href="#">Projects</a>
-        <a href="#">Services</a>
-      </nav>
+      <div id="animated-navbar">
+        <nav
+          role="navigation"
+          class="w-nav-menu"
+          style="transform: translateY(0px) translateX(0px)"
+        >
+          <a class="nav-link w-nav-link" href="#">Home</a>
+          <a class="nav-link w-nav-link" href="#">Projects</a>
+          <a class="nav-link w-nav-link" href="#">Services</a>
+        </nav>
+      </div>
       <div id="animated-right-menu"></div>
-      <a href="./contact-us.html">Contact Us</a>
+      <a class="button primary-button" href="./contact-us.html">Contact Us</a>
     </header>
 
     <section id="empower-section">
@@ -35,7 +40,7 @@
           </div>
           <div class="empower-buttons">
             <a href="#" class="see-our-work-btn">See our work</a>
-            <a href="#" class="get-in-touch-btn">Get in touch</a>
+            <a href="#" class="get-in-touch-btn w-button">Get in touch</a>
           </div>
         </div>
         <div class="empower-images">
@@ -58,7 +63,7 @@
       </div>
     </section>
 
-    <section id="logos-section">
+    <!-- <section id="logos-section">
       <div class="container logos">
         <div class="grid-logos">
           <div class="client-logo">
@@ -327,6 +332,6 @@
           <a href="#">Privacy Policy</a>
         </div>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>
