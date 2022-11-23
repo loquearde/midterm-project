@@ -15,7 +15,7 @@ Inactive A tag on nav: #6C718B */
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  outline: 1px red solid;
+  /* outline: 1px red solid; */
 }
 
 body {
@@ -34,18 +34,31 @@ body {
   display: none !important;
 }
 
-/* Navbar */
+/* Nueva navbar */
 
 header {
+  background-color: transparent;
+}
+
+li {
+  list-style: none;
+}
+
+.nav-item a {
+  color: #2f313f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar {
+  min-height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 45px;
-  margin-right: 45px;
-  height: 50px;
+  padding: 0 24px;
 }
 
-.navbar-container .navbar-logo {
+.navbar-logo {
   width: 60px;
   height: 18px;
   background-image: url(./project-assets/logos/circle.svg);
@@ -54,36 +67,74 @@ header {
   background-repeat: no-repeat;
 }
 
-.navbar-container .w-nav-menu {
-  position: relative;
-  float: right;
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
 }
 
-.nav-link {
-  font-size: 17px;
-  font-weight: 500;
-  color: #6b708d;
+.nav-link:hover {
+  color: #0082f3;
 }
 
-.w-nav-link {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  text-decoration: none;
-  padding: 20px;
-  text-align: left;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.button {
-  font-family: "Roboto", sans-serif;
+.hamburger {
+  display: none;
+  cursor: pointer;
 }
 
 .button .primary-button {
   padding: 15px 30px;
   background-color: #072ac8;
   font-size: 17px;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #464756;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: absolute;
+    left: -100%;
+    top: 50px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #c8c8c8;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
 }
 
 /* Empower section */
@@ -537,6 +588,7 @@ h2 {
   flex-direction: column;
   justify-content: space-between;
   background-color: #fff;
+  margin-bottom: 15px;
 }
 
 .service-image {
@@ -596,12 +648,12 @@ h2 {
   width: 90vw;
   height: 500px;
   display: flex;
-  margin-top: 60px;
   padding: 0px 30px;
   flex-direction: row;
   margin-right: auto;
   margin-left: auto;
   background-color: #ffc600;
+  margin-top: 25px;
 }
 
 .container .container-cta {
