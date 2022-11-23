@@ -11,4 +11,4 @@ Una vez solucionado este problema, he podido continuar estilando hasta la secci�
 
 ## Miércoles 23 de noviembre de 2022
 
-Hoy en la mañana me propongo terminar la homepage en su versión para móvil y luego trasladar todas las secciones recurrentes a las otras páginas. Después, espero poder empezar a trabajar en los media queries para que la homepage se adapte a pantallas más grandes. A lo largo de hoy, me he dado cuenta de que las dimensiones de mi página no son correctas, por lo que me dispongo a ajustarlas.
+Hoy en la mañana me propongo terminar la homepage en su versión para móvil y luego trasladar todas las secciones recurrentes a las otras páginas. Después, espero poder empezar a trabajar en los media queries para que la homepage se adapte a pantallas más grandes. A lo largo de hoy, me he dado cuenta de que las dimensiones de mi página no son correctas, por lo que me dispongo a ajustarlas. Una vez solucionados estos problemas y con la versión móvil de la homepage ya lista, me dispongo a comenzar con el diseño responsive para tablet y pantalla grande.
