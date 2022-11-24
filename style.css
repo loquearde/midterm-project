@@ -49,8 +49,8 @@ li {
 .nav-item a {
   color: #6b708d;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .navbar {
@@ -93,6 +93,10 @@ li {
   font-size: 17px;
   color: white !important;
   text-align: center;
+}
+
+.primary-button:hover {
+  background-color: #292e47;
 }
 
 .bar {
@@ -226,6 +230,10 @@ a:hover {
   margin-right: 0px;
   margin-bottom: 20px;
   text-align: center;
+}
+
+.get-in-touch-btn:hover {
+  background-color: #292e47;
 }
 
 .w-button {
