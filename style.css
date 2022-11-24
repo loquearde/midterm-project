@@ -27,7 +27,7 @@ body {
   line-height: 20px;
   min-height: 100%;
   display: block;
-  margin: 30px;
+  margin: 60px 30px;
 }
 
 /* Class to hide elements in mobile version */
@@ -47,9 +47,10 @@ li {
 }
 
 .nav-item a {
-  color: #2f313f;
+  color: #6b708d;
   text-decoration: none;
   font-weight: bold;
+  font-size: 20px;
 }
 
 .navbar {
@@ -58,6 +59,7 @@ li {
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
+  max-width: 90vw;
 }
 
 .navbar-logo {
@@ -85,10 +87,12 @@ li {
   cursor: pointer;
 }
 
-.button .primary-button {
+.primary-button {
   padding: 15px 30px;
   background-color: #072ac8;
   font-size: 17px;
+  color: white !important;
+  text-align: center;
 }
 
 .bar {
@@ -491,7 +495,7 @@ h2 {
   font-size: 13px;
 }
 
-.emoji .top-left {
+.emoji-top-left {
   width: 100px;
   height: 100px;
   position: absolute;
@@ -507,7 +511,7 @@ h2 {
   background-repeat: no-repeat;
 }
 
-.emoji .top-right {
+.emoji-top-right {
   width: 100px;
   height: 100px;
   position: absolute;
@@ -523,7 +527,7 @@ h2 {
   background-repeat: no-repeat;
 }
 
-.emoji .bottom-left {
+.emoji-bottom-left {
   width: 100px;
   height: 100px;
   position: absolute;
@@ -539,7 +543,7 @@ h2 {
   background-repeat: no-repeat;
 }
 
-.emoji .bottom-right {
+.emoji-bottom-right {
   width: 100px;
   height: 100px;
   position: absolute;
@@ -848,9 +852,14 @@ footer {
     margin-top: 80px;
   }
   .projects-list-row {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 16px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    max-width: 100%;
   }
 
   #testimonial-section {
@@ -872,15 +881,61 @@ footer {
   .cta-heading {
     font-size: 2.3rem;
     margin-top: 120px;
+    text-align: center;
   }
 
-  .form-block {
+  .cta-form {
     display: flex;
-    /* volver aquí */
+    flex-direction: row;
+  }
+  .cta-textfield-wrapper {
+    margin-right: 18px;
+  }
+  .text-field {
+    width: 40vw;
   }
   .footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+
+/* BIGGER SCREEN */
+@media (min-width: 992px) {
+  .empower-section-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .empower-image-main {
+    max-width: 560px;
+  }
+  .client-logo {
+    margin-right: 100px;
+  }
+  #testimonial-section {
+    max-width: 1200px;
+    height: 700px;
+  }
+
+  .services-heading {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 75px;
+    margin-top: 150px;
+    margin-bottom: 75px;
+  }
+
+  .services-list-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .service-card {
+    max-width: 340px;
+    height: 346px;
   }
 }

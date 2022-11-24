@@ -12,3 +12,10 @@ document.querySelectorAll(".nav-link").forEach((n) =>
     navMenu.classList.remove("active");
   })
 );
+
+const submitResponse = () => {
+  event.preventDefault();
+  document.getElementById(
+    "submit-response"
+  ).innerHTML = `Thank you! Your submission has been received!`;
+};

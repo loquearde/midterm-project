@@ -23,17 +23,19 @@
             <a href="#" class="nav-link">Services</a>
           </li>
         </ul>
+        <div class="primary-button">
+          <a
+            href="./contact-us.html"
+            style="color: white; text-decoration: none"
+            >Contact Us</a
+          >
+        </div>
         <div class="hamburger">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </div>
       </nav>
-      <div>
-        <a class="button primary-button noshow" href="./contact-us.html"
-          >Contact Us</a
-        >
-      </div>
     </header>
 
     <section id="empower-section">
@@ -207,10 +209,10 @@
             <div class="client-position">Booking.com</div>
           </div>
         </div>
-        <div class="emoji top-left noshow"></div>
-        <div class="emoji top-right noshow"></div>
-        <div class="emoji bottom-left noshow"></div>
-        <div class="emoji bottom-right noshow"></div>
+        <div class="emoji-top-left noshow"></div>
+        <div class="emoji-top-right noshow"></div>
+        <div class="emoji-bottom-left noshow"></div>
+        <div class="emoji-bottom-right noshow"></div>
       </div>
     </section>
 
@@ -239,7 +241,9 @@
                 <div class="service-content">
                   <div class="service-image-2"></div>
                   <div class="service-text">
-                    <div class="project-title">User Experience Design</div>
+                    <div class="project-title" style="padding-top: 18px">
+                      User Experience Design
+                    </div>
                     <div class="project-title project-description">
                       Circle always focuses on delivering the best user
                       experience to your customers.
@@ -305,6 +309,8 @@
               value="Subscribe"
               data-wait="Please wait..."
               class="submit-button button primary-button cta-button w-button"
+              id="submit-btn"
+              onclick="submitResponse()"
             />
           </form>
           <div
@@ -313,16 +319,16 @@
             role="region"
             aria-label="Email Form success"
           >
-            <div>Thank you! Your submission has been received!</div>
+            <div id="submit-response"></div>
           </div>
-          <div
+          <!-- <div
             class="w-form-fail"
             tabindex="-1"
             role="region"
             aria-label="Email Form failure"
           >
             <div>Oops! Something went wrong while submitting the form.</div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
