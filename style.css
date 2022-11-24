@@ -129,7 +129,7 @@ li {
   .nav-menu {
     position: absolute;
     left: -100%;
-    top: 50px;
+    top: 0%;
     gap: 0;
     flex-direction: column;
     background-color: #c8c8c8;
@@ -362,8 +362,8 @@ h2 {
   width: 100%;
   max-width: 100%;
   display: flex;
-  height: 444px;
-  max-height: 444px;
+  height: auto;
+  max-height: 800px;
   flex-direction: column;
   justify-content: flex-start;
   flex: 1;
@@ -440,7 +440,7 @@ h2 {
 
 .container-testimonial {
   width: 90vw;
-  max-width: 90vw;
+  max-width: 50vw;
   color: #292e47;
 }
 
@@ -449,7 +449,7 @@ h2 {
   width: 90vw;
   margin-right: 0%;
   margin-left: 0%;
-  max-width: 90vw;
+  max-width: 50vw;
   margin-bottom: 0px;
   line-height: 150%;
   color: #ecf7ff;
@@ -948,11 +948,13 @@ footer {
   }
 }
 
-/* Contact Us section MOBILE */
+/* Contact Us MOBILE */
 
 .contact-form-container {
   margin-top: 0px;
-  max-width: 767px;
+  max-width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .contact-form-title {
@@ -999,6 +1001,23 @@ footer {
   height: 80px;
   width: 100%;
   margin-top: 30px;
+}
+
+/* Contact Us TABLET */
+
+@media (min-width: 768px) {
+  .inline {
+    display: inline-flex;
+    width: 100%;
+    max-width: 90vw;
+  }
+
+  .inline div {
+    width: 50%;
+  }
+  .contact-text-wrapper {
+    margin-right: 20px;
+  }
 }
 
 /* Projects styling */

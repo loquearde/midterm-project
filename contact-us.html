@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <script src="./index.js"></script>
+
     <title>Contact Us</title>
   </head>
   <body>
@@ -60,29 +60,31 @@
               required
             />
           </div>
-          <div class="contact-text-wrapper">
-            <label for="email" class="contact-title">Email</label>
-            <input
-              type="email"
-              class="contact-text-field"
-              maxlength="256"
-              name="email"
-              data-name="email"
-              placeholder="Enter your email"
-              id="email"
-            />
-          </div>
-          <div class="contact-text-wrapper">
-            <label for="phone" class="contact-title">Phone</label>
-            <input
-              type="tel"
-              class="contact-text-field"
-              maxlength="256"
-              name="phone"
-              data-name="phone"
-              placeholder="Enter your phone"
-              id="phone"
-            />
+          <div class="inline">
+            <div class="contact-text-wrapper">
+              <label for="email" class="contact-title">Email</label>
+              <input
+                type="email"
+                class="contact-text-field"
+                maxlength="256"
+                name="email"
+                data-name="email"
+                placeholder="Enter your email"
+                id="email"
+              />
+            </div>
+            <div class="contact-text-wrapper">
+              <label for="phone" class="contact-title">Phone</label>
+              <input
+                type="tel"
+                class="contact-text-field"
+                maxlength="256"
+                name="phone"
+                data-name="phone"
+                placeholder="Enter your phone"
+                id="phone"
+              />
+            </div>
           </div>
           <div class="contact-text-wrapper">
             <label for="message" class="contact-title">Message</label>
@@ -123,5 +125,6 @@
         </div>
       </div>
     </footer>
+    <script src="./index.js"></script>
   </body>
 </html>

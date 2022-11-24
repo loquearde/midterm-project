@@ -1,17 +1,17 @@
-// const hamburger = document.querySelector(".hamburger");
-// const navMenu = document.querySelector(".nav-menu");
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
-// hamburger.addEventListener("click", () => {
-//   hamburger.classList.toggle("active");
-//   navMenu.classList.toggle("active");
-// });
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+});
 
-// document.querySelectorAll(".nav-link").forEach((n) =>
-//   n.addEventListener("click", () => {
-//     hamburger.classList.remove("active");
-//     navMenu.classList.remove("active");
-//   })
-// );
+document.querySelectorAll(".nav-link").forEach((n) =>
+  n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+  })
+);
 
 const submitResponse = () => {
   event.preventDefault();
@@ -83,15 +83,15 @@ const addInfo = (preventForm) => {
   preventForm.preventDefault();
 
   let fullName = document.querySelector("#name").value;
-  // let email = document.querySelector("#email").value;
-  // let phone = document.querySelector("#phone").value;
+  //   let email = document.querySelector("#mail").value;
+  //   let phone = document.querySelector("#phone").value;
   let message = document.querySelector("#message").value;
 
   fetch("https://jsonplaceholder.typicode.com/posts", {
     method: "POST",
     body: JSON.stringify({
       title: fullName,
-      userID: 1,
+      userId: 1,
       body: message,
     }),
     headers: {
@@ -101,7 +101,7 @@ const addInfo = (preventForm) => {
   })
     .then((response) => response.json())
     .then((formData) => console.log(formData))
-    .then(() => alert("Hemos recibido tu información"))
+    .then(() => alert("Todo está correcto"))
     .then(() => inputs.reset())
     .catch((error) => console.log(error));
 };
