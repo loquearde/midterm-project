@@ -10,18 +10,36 @@
   </head>
   <body>
     <header>
-      <a href="#" class="navbar-logo w-nav-brand"></a>
-      <nav class="home-project-services">
-        <a href="#">Home</a>
-        <a href="#">Projects</a>
-        <a href="#">Services</a>
+      <nav class="navbar">
+        <a href="#" class="navbar-logo"></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Project</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Services</a>
+          </li>
+        </ul>
+        <div class="primary-button w-button noshow">
+          <a
+            href="./contact-us.html"
+            style="color: white; text-decoration: none"
+            >Contact Us</a
+          >
+        </div>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
-      <div id="animated-right-menu"></div>
-      <a href="./contact-us.html">Contact Us</a>
     </header>
-    <section class="section project">
-      <div class="container project">
-        <h1 class="project-page-title">Vectorify</h1>
+    <section class="section-project">
+      <div class="container-project container">
+        <h1 class="project-page-title"></h1>
         <div class="project-type-wrapper">
           <div class="project-page-type">User Experience Design</div>
           <div class="project-completion">
@@ -30,101 +48,72 @@
           </div>
         </div>
         <div class="project-image-wrapper">
-          <img src="./project-assets/projects-section/3.jpg" alt="vectorify" />
+          <img
+            src="./project-assets/projects-section/3.jpg"
+            class="project-page-image"
+          />
         </div>
       </div>
       <div class="project-text">
-        <p>
-          Vectorify is lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat
-          faucibus sem, id vulputate justo ornare non. Nullam et vehicula sem.
-          Pellentesque bibendum massa non nisl posuere cursus. Aliquam ac eros
-          pretium neque consequat facilisis. Ut sit amet justo varius ex
-          ultrices fringilla. Sed vel turpis fringilla ante gravida vestibulum.
-          Etiam a sollicitudin leo. Nunc metus lectus, lacinia ut arcu quis,
-          pretium congue lacus.
-        </p>
-        <p>
-          Aliquam blandit varius metus, in mattis orci convallis sit amet. Fusce
-          et sem ac velit placerat ultrices in id dolor. Sed eget auctor metus.
-          Sed suscipit fringilla lectus, a maximus justo bibendum a. Donec et
-          pellentesque nisl, vitae tempus lorem. Sed efficitur cursus rhoncus.
-          Duis placerat nisi quis mi tincidunt, sit amet tincidunt urna
-          convallis. Nam et sagittis felis. Pellentesque placerat orci sodales
-          nisi convallis ultrices. Nunc posuere neque eu mi imperdiet
-          ullamcorper. Praesent tempor convallis rutrum. Vestibulum dignissim
-          pellentesque eros in placerat. Etiam at nisi quis quam sollicitudin
-          vehicula sit amet vel mi.
-        </p>
+        <p></p>
       </div>
     </section>
 
-    <section class="section project">
-      <div class="container projects-container">
-        <h2 class="projects-heading">Other Projects</h2>
-        <div class="projects-list-wrapper">
-          <div class="projects-list-row">
-            <div class="list-item">
-                <div class="project-card">
-                  <div class="project-image">
-                    <img
-                      class="project-card-image"
-                      src="./project-assets/projects-section/1.jpg"
-                      alt="simplify"
-                    />
-                  </div>
-                  <div class="project-text">
-                    <div class="project-title">Simplify</div>
+    <section id="services-section">
+      <div class="container services-container">
+        <h2 class="services-heading">Other Projects</h2>
+        <div class="services-list-wrapper">
+          <div class="services-list-row">
+            <div class="collection-item">
+              <div class="service-card">
+                <div class="service-content">
+                  <div class="service-image"></div>
+                  <div class="service-text">
+                    <div class="project-title">User Interface Design</div>
                     <div class="project-title project-description">
-                      UI Design & App Development
+                      Circle provides you with a stunning user interface design
+                      that is accessible to everyone
                     </div>
                   </div>
-                  <a
-                    href="/projects/simplify"
-                    target="_blank"
-                    class="project-link"
+                </div>
+                <a href="#" target="_blank" class="project-link">Learn More</a>
+              </div>
+            </div>
+            <div class="collection-item">
+              <div class="service-card">
+                <div class="service-content">
+                  <div class="service-image-2"></div>
+                  <div class="service-text">
+                    <div class="project-title" style="padding-top: 18px">
+                      User Experience Design
+                    </div>
+                    <div class="project-title project-description">
+                      Circle always focuses on delivering the best user
+                      experience to your customers.
+                    </div>
+                  </div>
+                  <a href="#" target="_blank" class="project-link"
                     >Learn More</a
                   >
                 </div>
+              </div>
+            </div>
 
-                <div class="list-item">
-                    <div class="project-card">
-                      <div class="project-image">
-                        <img
-                          src="./project-assets/projects-section/2.jpg"
-                          alt="dashcoin"
-                        />
-                      </div>
-                      <div class="project-text">
-                        <div class="project-title">Dashcoin</div>
-                        <div class="project-title project-description">
-                          Web Development
-                        </div>
-                      </div>
-                      <a
-                        href="/projects/dashcoin"
-                        target="_blank"
-                        class="project-link"
-                        >Learn More</a
-                      >
+            <div class="collection-item">
+              <div class="service-card">
+                <div class="service-image-3"></div>
+                <div class="service-content">
+                  <div class="service-text">
+                    <div class="project-title">Application Development</div>
+                    <div class="project-title project-description">
+                      We develop high-quality mobile and web applications using
+                      the latest technology stack.
                     </div>
                   </div>
-
-            <div class="list-item">
-              <div class="project-card">
-                <div class="project-image">
-                  <img
-                    class="project-card-image"
-                    src="./project-assets/projects-section/4.jpg"
-                    alt="orbit"
-                  />
+                  <a href="#" target="_blank" class="project-link"
+                    >Learn More</a
+                  >
                 </div>
-                <div class="project-text">
-                  <div class="project-title">Orbit</div>
-                  <div class="project-title project-description">UI Design</div>
-                </div>
-                <a href="/projects/orbit" target="_blank" class="project-link"
-                  >Learn More</a
-                >
               </div>
             </div>
           </div>
@@ -162,7 +151,9 @@
               type="submit"
               value="Subscribe"
               data-wait="Please wait..."
-              class="button primary-button cta-button w-button"
+              class="submit-button button primary-button cta-button w-button"
+              id="submit-btn"
+              onclick="submitResponse()"
             />
           </form>
           <div
@@ -171,16 +162,16 @@
             role="region"
             aria-label="Email Form success"
           >
-            <div>Thank you! Your submission has been received!</div>
+            <div id="submit-response"></div>
           </div>
-          <div
+          <!-- <div
             class="w-form-fail"
             tabindex="-1"
             role="region"
             aria-label="Email Form failure"
           >
             <div>Oops! Something went wrong while submitting the form.</div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -194,12 +185,12 @@
           </div>
         </div>
         <div class="footer-links">
-          <a href="#">Team</a>
-          <a href="#">Services</a>
-          <a href="#">About Us</a>
-          <a href="#">Press</a>
-          <a href="#">Projects</a>
-          <a href="#">Privacy Policy</a>
+          <a class="footer-link" href="#">Team</a>
+          <a class="footer-link" href="#">Services</a>
+          <a class="footer-link" href="#">About Us</a>
+          <a class="footer-link" href="#">Press</a>
+          <a class="footer-link" href="#">Projects</a>
+          <a class="footer-link" href="#">Privacy Policy</a>
         </div>
       </div>
     </footer>

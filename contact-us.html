@@ -4,95 +4,107 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
     <link rel="stylesheet" href="./style.css" />
     <script src="./index.js"></script>
+    <title>Contact Us</title>
   </head>
   <body>
     <header>
-      <a href="#" class="navbar-logo w-nav-brand"></a>
-      <nav class="home-project-services">
-        <a href="#">Home</a>
-        <a href="#">Projects</a>
-        <a href="#">Services</a>
-      </nav>
-      <div id="animated-right-menu"></div>
-      <a href="./contact-us.html">Contact Us</a>
-    </header>
-    <section id="contact-section">
-      <div class="container contact-container">
-        <h1 class="contact-heading">Contact Us</h1>
-        <div class="contact-form">
-          <form
-            id="email-form"
-            name="email-form"
-            data-name="Email Form"
-            method="get"
-            class="contact-form-wrapper"
-            aria-label="Email Form"
+      <nav class="navbar">
+        <a href="#" class="navbar-logo"></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Project</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Services</a>
+          </li>
+        </ul>
+        <div class="primary-button w-button noshow">
+          <a
+            href="./contact-us.html"
+            style="color: white; text-decoration: none"
+            >Contact Us</a
           >
-            <div class="contact-text-wrapper">
-              <label for="name" class="contact-title">Full Name *</label>
-              <input
-                type="text"
-                class="contact-text-field w-input"
-                maxlength="256"
-                name="name"
-                data-name="Name"
-                placeholder="Enter your full name"
-                id="name"
-                required=""
-              />
-            </div>
-
-            <div class="contact-text-wrapper">
-              <label for="email" class="contact-title">Email</label>
-              <input
-                type="email"
-                class="contact-text-field w-input"
-                maxlength="256"
-                name="email"
-                data-name="email"
-                placeholder="Enter your email"
-                id="email"
-              />
-            </div>
-
-            <div class="contact-text-wrapper">
-              <label for="phone" class="contact-title">Phone</label>
-              <input
-                type="tel"
-                class="contact-text-field w-input"
-                maxlength="256"
-                name="phone"
-                data-name="phone"
-                placeholder="Enter your phone"
-                id="phone"
-              />
-            </div>
-
-            <div class="contact-text-wrapper">
-              <label for="field" class="contact-title">Message *</label>
-              <textarea
-                placeholder="Write your message here..."
-                maxlength="5000"
-                id="field"
-                name="field"
-                required=""
-                data-name="field"
-                class="contact-text-field textarea w-input"
-              ></textarea>
-            </div>
-            <input
-              type="submit"
-              value="Submit"
-              data-wait="Please wait..."
-              class="submit-button button"
-            />
-          </form>
         </div>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <section id="contact-heading"></section>
+    <div class="contact-form-container">
+      <h2 class="contact-form-title">Contact Us</h2>
+      <div class="contact-form">
+        <form
+          class="contact-form-wrapper"
+          id="email-form"
+          name="email-form"
+          method="get"
+        >
+          <div class="contact-text-wrapper">
+            <label for="name" class="contact-title">Full Name *</label>
+            <input
+              type="text"
+              class="contact-text-field"
+              maxlength="256"
+              name="name"
+              data-name="name"
+              placeholder="Enter your full name"
+              id="name"
+              required
+            />
+          </div>
+          <div class="contact-text-wrapper">
+            <label for="email" class="contact-title">Email</label>
+            <input
+              type="email"
+              class="contact-text-field"
+              maxlength="256"
+              name="email"
+              data-name="email"
+              placeholder="Enter your email"
+              id="email"
+            />
+          </div>
+          <div class="contact-text-wrapper">
+            <label for="phone" class="contact-title">Phone</label>
+            <input
+              type="tel"
+              class="contact-text-field"
+              maxlength="256"
+              name="phone"
+              data-name="phone"
+              placeholder="Enter your phone"
+              id="phone"
+            />
+          </div>
+          <div class="contact-text-wrapper">
+            <label for="message" class="contact-title">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              class="contact-text-field textarea"
+              maxlength="5000"
+              placeholder="Write your message here..."
+              data-name="message"
+            ></textarea>
+          </div>
+          <input
+            type="submit"
+            value="Submit"
+            data-wait="Please wait..."
+            id="contact-submit"
+            class="primary-button contact-button"
+          />
+        </form>
       </div>
-    </section>
+    </div>
     <footer>
       <div class="container footer">
         <div class="footer-content">
@@ -102,12 +114,12 @@
           </div>
         </div>
         <div class="footer-links">
-          <a href="#">Team</a>
-          <a href="#">Services</a>
-          <a href="#">About Us</a>
-          <a href="#">Press</a>
-          <a href="#">Projects</a>
-          <a href="#">Privacy Policy</a>
+          <a class="footer-link" href="#">Team</a>
+          <a class="footer-link" href="#">Services</a>
+          <a class="footer-link" href="#">About Us</a>
+          <a class="footer-link" href="#">Press</a>
+          <a class="footer-link" href="#">Projects</a>
+          <a class="footer-link" href="#">Privacy Policy</a>
         </div>
       </div>
     </footer>
