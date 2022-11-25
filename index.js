@@ -44,15 +44,14 @@ const getInfo = () => {
                     <div class="project-title project-description">
                       ${element.body}
                     </div>
+                    </div>
+                    <a
+                      href="simplify.html"
+                      class="project-link"
+                      >Learn More</a
+                    >
                   </div>
-                </div>
-                <a
-                  href="simplify.html"
-                  target="_blank"
-                  class="project-link"
-                  >Learn More</a
-                >
-              </div>
+                  </div>
             `;
       });
       document.querySelector(".projects-list-row").innerHTML += infoExterna;
