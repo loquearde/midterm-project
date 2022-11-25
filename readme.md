@@ -16,3 +16,7 @@ Hoy en la mañana me propongo terminar la homepage en su versión para móvil y 
 ## Jueves 24 de noviembre de 2022
 
 Ahora que ya he conseguido terminar el styling de la página principal incluyendo su responsiveness. Esta mañana quiero montar correctamente todo el resto de páginas. Una vez listas, me faltaría el código de JavaScript para que el formulario de la homepage sea reactivo, así como el formulario. Por último, tengo que manipular el DOM en javascript para poder traer contenido a las páginas de proyectos. Con ayuda del grupo hemos podido sacar adelante el código de JavaScript. Ya casi acabando el día y solo me faltan por pulir algunos detalles de estilo.
+
+## Viernes 25 de noviembre de 2022
+
+Hoy continuaré trabajando algunos errores que tengo en el estilo y en las media queries. También me gustaría revisar el código para limpiarlo un poco y asegurarme que no hay elementos redundantes, clases y IDs que no tienen uso y cosas por el estilo.
