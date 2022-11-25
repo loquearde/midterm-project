@@ -19,4 +19,4 @@ Ahora que ya he conseguido terminar el styling de la página principal incluyend
 
 ## Viernes 25 de noviembre de 2022
 
-Hoy continuaré trabajando algunos errores que tengo en el estilo y en las media queries. También me gustaría revisar el código para limpiarlo un poco y asegurarme que no hay elementos redundantes, clases y IDs que no tienen uso y cosas por el estilo.
+Hoy continuaré trabajando algunos errores que tengo en el estilo y en las media queries. También me gustaría revisar el código para limpiarlo un poco y asegurarme que no hay elementos redundantes, clases y IDs que no tienen uso y cosas por el estilo. Ya he subido a Vercel todo y los tres tipos de página funcionan. Proyecto listo.
