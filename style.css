@@ -316,7 +316,7 @@ img {
 
 #projects-section {
   width: 90vw;
-  margin-top: 40px;
+  margin-top: 80px;
 }
 
 .projects-container {
@@ -332,9 +332,9 @@ h2 {
 }
 
 .projects-heading {
-  font-size: 30px;
-  text-align: center;
+  font-size: 40px;
   color: #292e47;
+  margin-bottom: 40px;
 }
 
 .projects-list-wrapper {
@@ -1041,10 +1041,6 @@ footer {
   font-size: 20px;
   margin: 0 0 10px;
   color: #6b708d;
-}
-
-.project-text {
-  margin-right: 100px;
 }
 
 .project-completion {

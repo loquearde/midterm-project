@@ -47,7 +47,7 @@ const getInfo = () => {
                   </div>
                 </div>
                 <a
-                  href="/projects/simplify"
+                  href="/projects/simplify.html"
                   target="_blank"
                   class="project-link"
                   >Learn More</a
